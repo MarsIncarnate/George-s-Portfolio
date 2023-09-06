@@ -1,0 +1,1371 @@
+/*
+Theme Name: Ballsy Media
+Theme URI: https://ballsymedia.co.uk/
+Author: Ballsy Media
+Author URI:  https://ballsymedia.co.uk/
+Description: Theme v6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Ballsy Media
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face {
+  font-family: 'Wolf in the City';
+  src: url('./fonts/Wolf in the City.eot');
+  src: url('./fonts/Wolf in the City.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Wolf in the City.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WolfintheCity';
+  src: url('./fonts/WolfintheCity.svg#WolfintheCity') format('svg'),
+       url('./fonts/WolfintheCity.ttf') format('truetype'),
+       url('./fonts/WolfintheCity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+     
+
+
+
+/* 
+============================================================================================================
+============================================================================================================
+
+                                        THEME STYLE default CSS START
+
+============================================================================================================
+============================================================================================================
+*/
+
+body, html, ul {
+	margin: 0px;
+ 	padding: 0px;
+}
+
+body {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	word-wrap: break-word;
+	font-size: 21px;
+	overflow-x: hidden;
+	color: orange;
+	opacity: 0;
+
+	
+}
+.elementor-section.elementor-section-boxed > .elementor-container .elementor-container {
+	padding: 0;
+}
+body.elementor-editor-active {
+	opacity: 1;
+}
+.elementor-editor-active .smart-page-loader {
+	display: none !important;
+}
+b, strong {
+	font-weight: 700;
+}
+
+a:link,a:active,a:visited {
+	text-decoration:none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	color: yellow;
+	outline:0!important;
+}
+
+a:hover {
+	color: orange;
+}
+
+.upb_row_bg {
+	width: 100% !important;
+}
+
+::selection {
+   color: #ffffff; 
+   background: yellow !important;
+}
+
+* { 
+	outline:none!important;
+}
+
+/*default form css start*/
+
+form.elementor-form .select2-container .select2-choice,form.elementor-form select,form.elementor-form select {
+	cursor: pointer;
+}
+
+form.elementor-form .elementor-field-type-time .elementor-field-textual.elementor-size-sm,form.elementor-form .elementor-field-type-date .elementor-date-field, form.elementor-form .select2-container .select2-choice,form.elementor-form select,
+form.elementor-form input[type='tel'],form.elementor-form textarea,form.elementor-form input[type='password'],form.elementor-form input[type='number'],form.elementor-form input[type='url'],form.elementor-form input[type='email'],form.elementor-form input[type='text'],form.elementor-form input[type='search'] {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    max-width: 100%;
+    color: #fff !important;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px !important;
+    padding: 18px 22px !important;
+    background-color: orange !important;
+    border: none !important;
+    border-radius: 0 !important;
+    height: 60px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form.elementor-form .elementor-field-group {
+	position: relative;
+	overflow: visible;
+	margin-right: calc( 10px/2 );
+    margin-left: calc( 10px/2 );
+    padding: 0 !important;
+    border: 2px solid #fff;
+    transition: all .5s;
+}
+
+form.elementor-form .elementor-field-type-submit {
+	border: none !important;
+}
+
+form.elementor-form {
+	position: relative;
+}
+
+form.elementor-form .elementor-field-type-submit {
+	position: absolute;
+    bottom: 17px;
+    right: -5px;
+	 margin-bottom: 0 !important;
+	 width: auto;
+	background: orange;
+	padding: 8px 0px 8px 28px !important;
+}
+
+form.elementor-form .dbtn {
+	 font-weight: 700;
+	 font-size: 26px !important;
+	 padding: 0 70px 0 0 !important;
+	 cursor: pointer;
+
+}
+
+form.elementor-form .dbtn:after {
+	display: none;
+}
+
+form.elementor-form .dbtn:before {
+	top: 13px;
+	right: 22px;
+	transition: all .5s;
+}
+
+
+form.elementor-form .dbtn:hover:before {
+	right: 12px;
+}
+
+form.elementor-form .elementor-field-group .elementor-field-label {
+    position: absolute;
+    left: 14px;
+    font-size: 20px;
+    background: orange;
+    padding: 2px 24px 1px;
+    pointer-events: none;
+    z-index: 9;
+    top: -13px;
+    width: auto;
+   min-height: 20px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    border-radius: 0px;
+}
+
+
+form.elementor-form .elementor-field-group .elementor-field-label:after {
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 9px);
+} 
+
+form.elementor-form .elementor-field-group .elementor-field-label:before {
+    content: '';
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -12px;
+    top: 0;
+    background: orange;
+    z-index: -1;
+} 
+
+form.elementor-form .elementor-field-type-textarea .elementor-field-label {
+    display: block;
+
+}
+
+form.elementor-form .elementor-field-type-upload .elementor-field-label,form.elementor-form .elementor-field-type-acceptance .elementor-field-label,form.elementor-form .elementor-field-type-checkbox .elementor-field-label,form.elementor-form .elementor-field-type-radio .elementor-field-label {
+    position: static !important;
+    padding: 0 !important;
+    min-height: auto !important;
+    font-size: 16px !important;
+    color: #464646 !important;
+    margin-bottom: 15px; 
+    background: transparent !important;
+}
+
+form.elementor-form .elementor-field-type-upload .elementor-field-label:before,form.elementor-form .elementor-field-type-acceptance .elementor-field-label:before,form.elementor-form .elementor-field-type-checkbox .elementor-field-label:before,form.elementor-form .elementor-field-type-radio .elementor-field-label:before {
+	display: none;
+}
+
+form.elementor-form .elementor-field-type-upload,form.elementor-form .elementor-field-type-acceptance,form.elementor-form .elementor-field-type-checkbox,form.elementor-form .elementor-field-type-radio {
+	border: none !important;
+}
+
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option,form.elementor-form .elementor-field-type-radio .elementor-field-option,form.elementor-form .elementor-field-type-checkbox .elementor-field-option {
+    position: relative;
+    margin-right: 23px;
+    padding-right: 0;
+    margin-bottom: 15px;
+}
+
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option:last-child,form.elementor-form .elementor-field-type-radio .elementor-field-option:last-child,form.elementor-form .elementor-field-type-checkbox .elementor-field-option:last-child {
+	margin-right: 0;
+}
+
+form.elementor-form .elementor-field-type-acceptance input,form.elementor-form .elementor-field-type-radio input,form.elementor-form .elementor-field-type-checkbox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    opacity: 0;
+    display: block !important;
+    margin: 0;	
+    cursor: pointer;
+}
+
+form.elementor-form .elementor-field-type-acceptance label,form.elementor-form .elementor-field-type-radio label,form.elementor-form .elementor-field-type-checkbox label {
+    padding-left: 36px;
+    vertical-align: middle;
+    display: block !important;
+}
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option label:before,form.elementor-form .elementor-field-type-radio .elementor-field-option label:before,form.elementor-form .elementor-field-type-checkbox .elementor-field-option label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #cccccc;
+    background: #ffffff;
+    cursor: pointer;
+}
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option label:after,form.elementor-form .elementor-field-type-radio .elementor-field-option label:after,form.elementor-form .elementor-field-type-checkbox .elementor-field-option label:after {
+	content: "";
+	display: none;
+}
+
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option label:after,form.elementor-form .elementor-field-type-radio .elementor-field-option label:after,form.elementor-form .elementor-field-type-checkbox .elementor-field-option label:after {
+    left: 6px;
+    top: 6px;
+    width: 11px;
+    position: absolute;
+    height: 6px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-50deg);
+}
+
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option input:checked ~ label:after,form.elementor-form .elementor-field-type-radio .elementor-field-option input:checked ~ label:after,form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:after {
+	display: block;
+}
+
+form.elementor-form .elementor-field-type-radio .elementor-field-option label:before {
+    border-radius: 50%;	
+}
+/*
+form.elementor-form .elementor-field-type-acceptance .elementor-field-option input:checked ~ label:before,form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:before,
+form.elementor-form .elementor-field-type-radio .elementor-field-option input:checked ~ label:before {
+	background: #f0201f;
+	border-color: #f0201f;
+}
+*/
+form.elementor-form .elementor-field-type-select .elementor-select-wrapper:before {
+	z-index: 99;
+}
+
+textarea {
+	min-height: 200px !important;
+}
+
+form.elementor-form .select2-container .select2-choice:focus,form.elementor-form select:focus,form.elementor-form input[type='tel']:focus,form.elementor-form textarea:focus,
+form.elementor-form input[type='email']:focus,form.elementor-form input[type='text']:focus,form.elementor-form input[type='search']:focus,form.elementor-form button:focus,form.elementor-form input[type='submit']:focus,form.elementor-form input[type='button']:focus,form.elementor-form input[type='text']:focus {
+	box-shadow:0 0 0 !important;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+	color: #ffffff !important;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder { /* Firefox 18- */
+	color: #ffffff !important;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {  /* Firefox 19+ */
+	color: #ffffff !important;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {  
+	color: #ffffff !important;
+}
+
+.flatpickr-calendar .dayContainer span {
+    transition: all .8s;
+    opacity: 0;
+    width: 0;
+    transform: scale(.2);
+    color: transparent;	
+}
+.flatpickr-calendar.open .dayContainer span {
+	opacity: 1;
+	transform: scale(1);
+	color: #393939;
+}
+
+/*default form css end*/
+
+
+
+
+.dbtn {
+    font-size: 30px !important;
+    font-weight: 700;
+    padding: 0 80px 0 0 !important;
+    text-transform: none;
+    background-color: transparent !important;
+    color: #FFFFED !important;
+    border: none !important;
+    border-radius: 0px !important;
+    display: inline-block;
+    -webkit-transition: all .5s !important;
+    -moz-transition: all .5s !important;
+    -o-transition: all .5s !important;
+    transition: all .5s !important;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 9;
+}
+
+.dbtn .mText:last-child {
+	display: none;
+}
+
+.dbtn:after {
+	content: '';
+	background: -webkit-linear-gradient(left, #FFFFED 0%, #8B8000 100%);
+	background: -o-linear-gradient(left, #FFFFED 0%, #8B8000 100%);
+	background: -moz-linear-gradient(left, #FFFFED 0%, #8B8000 100%);
+	position: absolute;
+	right: 0;
+	top: -18px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	transform: scale(1);
+	box-shadow: 0 0 12px rgba(0,0,0,.2);
+	z-index: -1;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.dbtn:hover:after {
+	transform: scale(1.2);
+}
+
+.dbtn:before {
+	content: '';
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 4px;
+    
+}
+
+
+.dbtn .elementor-button-icon {
+	display: none;
+}
+
+
+
+.sliderBx .dbtn .mText:before {
+	z-index: -1;
+}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top:0;
+	font-family: 'Montserrat', sans-serif;
+    color: orange;
+	font-weight: 800;
+}
+
+ul {
+	list-style:disc;
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+
+ol {
+	list-style:decimal;
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+
+ol li,ul li {
+	margin:0;
+	padding:0;
+}
+
+p {
+	padding-bottom:20px;
+	margin-bottom:0;
+	margin-top: 0;
+}
+
+.wrapper p {
+	
+}
+
+img {
+	transition:all .5s;
+	max-width: 100%;
+	height: auto;
+}
+
+/* content */
+
+.containerWrap p {
+	line-height: 32px;
+}
+
+.containerWrap .northbnrWrap h2,
+.containerWrap h1 {
+	font-size: 58px;
+	margin-bottom: 10px;
+}
+
+
+.containerWrap h2 {
+    font-size: 42px;
+	margin-bottom: 10px;
+}
+
+.containerWrap h3 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.containerWrap h4 {
+    font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.containerWrap h5 {
+    font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.containerWrap h6 {
+    font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.containerWrap ol li, 
+.containerWrap ul li {
+	list-style-position: outside;
+}
+
+.containerWrap ol, 
+.containerWrap ul {
+	margin: 20px 0 20px 20px;
+	margin-bottom: 7px;
+}
+
+img.alignnone,
+img.alignleft {
+float: left;
+margin: 0 30px 20px 0;
+}
+
+img.alignright {
+float: right;
+margin: 0 0 20px 30px;
+}
+
+img.aligncenter {
+   margin: 30px auto 25px;
+   display: block;
+   clear: both;
+}
+
+
+
+
+/* 
+============================================================================================================
+============================================================================================================
+
+                                    Animation CSS
+
+============================================================================================================
+============================================================================================================
+*/
+
+/* fadeInLeft */
+
+.animate-smaller-left {
+    animation-name: none !important;
+    -webkit-transform: translate3d(-50px, 0%, 0px);
+    -moz-transform: translate3d(-50px, 0%, 0px);
+    -o-transform: translate3d(-50px, 0%, 0px);
+    transform: translate3d(-50px, 0%, 0px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    transition-delay: 1s;
+}
+.animate-smaller-left.animated {
+    -webkit-transform: translate3d(0px, 0%, 0px);
+    -moz-transform: translate3d(0px, 0%, 0px);
+    -o-transform: translate3d(0px, 0%, 0px);
+    transform: translate3d(0px, 0%, 0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* fadeInRight */
+
+.animate-smaller-right {
+	animation-name: none !important;
+    -webkit-transform: translate3d(50px, 0%, 0px);
+    -moz-transform: translate3d(50px, 0%, 0px);
+    -o-transform: translate3d(50px, 0%, 0px);
+    transform: translate3d(50px, 0%, 0px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    transition-delay: 1s;
+}
+.animate-smaller-right.animated {
+    -webkit-transform: translate3d(0px, 0%, 0px);
+    -moz-transform: translate3d(0px, 0%, 0px);
+    -o-transform: translate3d(0px, 0%, 0px);
+    transform: translate3d(0px, 0%, 0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* animate-flip-x */
+
+.animate-flip-x {
+	animation-name: none !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    transition-delay: 1s;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.animate-flip-x.animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+/* animate-flip-y */
+
+.animate-flip-y {
+	animation-name: none !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    transition-delay: 1s;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.animate-flip-y.animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+/* animate-typing-left */
+
+.animate-typing-left {
+	animation-name: none !important;
+	transition: all 0s !important;
+	position: relative !important;
+	overflow: hidden;
+}
+.animate-typing-left .elementor-widget-container {
+    transition: all 1s !important;
+    transition-delay: 1s !important;
+    opacity: 0;
+}
+.animate-typing-left.animated .elementor-widget-container {
+	opacity: 1;
+}
+.animate-typing-left:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+    background: #ffffff;
+    z-index: 9;
+}
+.animate-typing-left.animated:before {
+    width: 0;
+}
+
+/* animate-typing-right */
+
+.animate-typing-right {
+	animation-name: none !important;
+	transition: all 0s !important;
+	position: relative !important;
+	overflow: hidden;
+}
+.animate-typing-right .elementor-widget-container {
+    transition: all 1s !important;
+    transition-delay: 1s !important;
+    opacity: 0;
+}
+.animate-typing-right.animated .elementor-widget-container {
+	opacity: 1;
+}
+.animate-typing-right:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+    background: #ffffff;
+    z-index: 9;
+}
+.animate-typing-right.animated:before {
+    width: 0;
+}
+
+/* animate-stop-fade-in */
+
+.animate-stop-fade-in {
+	animation-name: none !important;
+}
+
+/* animate-zoom-in-smaller */
+
+.animate-zoom-in-smaller {
+	animation-name: none !important;
+    transform: scale(.9);
+    transition: all 1s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+.animate-zoom-in-smaller.animated {
+	transform: scale(1);	
+	opacity: 1;
+}
+
+/* animate-zoom-out-smaller */
+
+.animate-zoom-out-smaller {
+	animation-name: none !important;
+    transform: scale(1.2);
+    transition: all 1s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+.animate-zoom-out-smaller.animated {
+	transform: scale(1);	
+	opacity: 1;
+}
+
+/* animate-fade-up */
+
+.animate-fade-up .elementor-widget-container {
+	overflow: hidden;
+}
+
+.animate-fade-up h2 {
+	transform: translate3d(0,101%,0);
+	transition: transform .5s;
+}
+
+.animate-fade-up.animated h2 {
+	transform: translateZ(0);
+}
+
+/* animate-fade-down */
+
+.animate-fade-down .elementor-widget-container {
+	overflow: hidden;
+}
+
+.animate-fade-down h2 {
+	transform: translate3d(0,-101%,0);
+	transition: transform .5s;
+}
+
+.animate-fade-down.animated h2 {
+	transform: translateZ(0);
+}
+
+/* animate-text-clip */
+
+.animate-text-clip h2 {
+	clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	-o-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	-moz-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	display: inline-block;
+	transition: .5s ease-in-out;
+
+}
+
+.animate-text-clip.animated h2 {
+	clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+	-o-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+	-moz-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+}
+
+/* testimonial css */
+
+.elementor-widget-testimonial-carousel .elementor-testimonial {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* 
+============================================================================================================
+============================================================================================================
+
+                                    THEME STYLE Main CSS START
+
+============================================================================================================
+============================================================================================================
+*/
+
+
+/* page-loaded */
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99991;
+    overflow: hidden;
+	transition: all 1s;
+    opacity: 1;
+    background: #FFFFED;
+}
+
+.page-loaded .preloader {
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9;
+	
+
+}
+
+.page-loaded .preloader {
+    transition-delay: 6s !important;
+} 
+
+
+.page-loaded .preloader {
+/*	opacity: 0;
+	visibility: hidden;*/
+}
+
+/*.page-loaded .preloader {
+   visibility: hidden;
+    opacity: 0;
+    transition-delay: 5s,5.5s;
+    transition-property: visibility,opacity;
+}*/ 
+
+.preloader .box1 {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 2000px);
+    left: calc(50% - 2000px);
+    width: 4000px;
+    height: 4000px;
+   /* background: -webkit-linear-gradient(left, #FFFFED 0%, #1f97d0 100%) !important;
+	background: -o-linear-gradient(left, #FFFFED 0%, #1f97d0 100%)!important;
+	background: -moz-linear-gradient(left, #FFFFED 0%, #1f97d0 100%) !important;*/
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+    transition: all 1s;
+	-webkit-transform: scale(8);
+	-moz-transform: scale(8);
+	-o-transform: scale(8);
+    transform: scale(8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+
+     
+}
+
+.page-loaded .preloader .box1 {
+	-webkit-transform: scale(.15);
+	-moz-transform: scale(.15);
+	-o-transform: scale(.15);
+    transform: scale(.15);
+    opacity: 1;
+}
+
+.safari.osx.page-loaded .preloader .box1 {
+	-webkit-transform: scale(.6);
+	-moz-transform: scale(.6);
+	-o-transform: scale(.6);
+    transform: scale(.6);
+}
+
+.preloader h3 {
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    opacity: 0;
+	 -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+   transition: all .5s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+	-o-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+.page-loaded .preloader  h3 {
+	opacity: 1;
+}
+
+.preloader h3 div {
+	-webkit-transition: all .5s !important;
+	-moz-transition: all .5s !important;
+	-o-transition: all .5s!important;
+	transition: all .5s !important;
+	
+}
+
+.preloader .textBox {
+	position: relative;
+}
+
+.page-loaded .preloader .textBox .image {
+	 opacity: 0;
+}
+
+.preloader .box3 {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 2000px);
+    left: calc(50% - 2000px);
+    width: 4000px;
+    height: 4000px;
+    background-color: orange;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+    transition: all 2s;
+   -webkit-transition-delay: 1.5s;
+    -moz-transition-delay: 1.5s;
+	-o-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+    transform: scale(0);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.page-loaded .preloader .box3 {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+    transform: scale(1);
+
+}
+
+.preloader .image {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.preloader .box2 {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 2000px);
+    left: calc(50% - 2000px);
+    width: 4000px;
+    height: 4000px;
+    background-color: #fff;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+    transition: all 1s;
+	-webkit-transition-delay: 5s;
+	-moz-transition-delay: 5s;
+	-o-transition-delay: 5s;
+	transition-delay: 5s;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+    transform: scale(0);
+    overflow: hidden;
+}
+
+
+.page-loaded .preloader .box2 {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+    transform: scale(1);
+
+}
+
+
+.inner .preloader .box2 {
+	 -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+
+.inner.page-loaded .preloader {
+	transition-delay: 1.5s !important;
+}
+
+
+.inner .preloader .box3 {
+    display: none;
+}
+
+.preloader .image img {
+	-webkit-transform: scale(.96);
+	-moz-transform: scale(.96);
+	-o-transform: scale(.96);
+	 transform: scale(.96);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	 transition: all 1s;	
+}
+
+
+ 
+@media (max-width: 767px) {
+	
+	.preloader .box2,
+	.preloader .box3,
+	.preloader .box1 {
+
+	}
+	
+	.preloader h3 {
+		font-size: 16px;
+    	line-height: 28px;
+	}
+	
+	.page-loaded .preloader  .textBox {
+		max-width: 234px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}  
+	
+	.page-loaded .preloader .box3,
+	.page-loaded .preloader .box2,
+	.page-loaded .preloader .box1 {
+		transform: scale(1.3);
+	
+	}
+	
+	.page-loaded .preloader .box1 img {
+		width: 198px;
+		margin: 0 auto;
+	}
+	
+}
+
+.safari.iphone  #bnr .elementor-background-video-container {
+	display: none;
+	
+}
+
+/* Footer */
+
+.footer .elementor-counter-title,
+.footer .elementor-counter-number-wrapper {
+	font-weight: 600 !important;
+    font-size: 28px !important;
+    display: inline-block !important;
+    line-height: normal !important;
+} 
+
+.footer  .elementor-star-rating {
+	margin-top: -8px;
+	margin-left: 10px;
+}
+
+.footer  .elementor-star-rating,
+.footer .elementor-counter {
+
+}
+
+.testimonialWrap .elementor-star-rating__wrapper i,
+.footer  .elementor-star-rating i {
+	margin: 0 3px;
+}
+
+.srv2Wrap .elementor-inner-column .elementor-background-overlay {
+	opacity: 0 !important;
+	transition: all .5s;
+}
+
+.srv2Wrap .elementor-inner-column .text-active .elementor-background-overlay,  
+.srv2Wrap .elementor-inner-column:hover .elementor-background-overlay {
+	opacity: 0.5 !important;
+}
+
+
+.containerWrap .srv2Wrap h3 {
+    text-shadow: 5px 2px 12px rgba(0,0,0,1);
+    padding-left: 5px;
+}
+
+
+.srv2Wrap .bx2 {
+-webkit-transform: translateX(60px) translateZ(0);
+    transform: translateX(60px) translateZ(0);
+    -webkit-clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+    clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+    opacity: 0;
+    -webkit-transition: all 2.5s cubic-bezier(.77,0,.175,1) !important;
+    transition: all 1.0s cubic-bezier(.77,0,.175,1) !important;
+    transition-delay: 0s !important;
+    
+}
+
+
+.srv2Wrap .effect.bx1 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+.srv2Wrap .bx1 {
+-webkit-transform: translateX(60px) translateZ(0);
+    transform: translateX(60px) translateZ(0);
+    -webkit-clip-path: polygon(0 0,0% 0,0% 100%,0 100%);
+    clip-path: polygon(0 0,0% 0,0% 100%,0 100%);
+    opacity: 0;
+    -webkit-transition: all 2.5s cubic-bezier(.77,0,.175,1) !important;
+    transition: all 1.0s cubic-bezier(.77,0,.175,1) !important;
+}
+
+
+.srv2Wrap .effect.bx2 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    transition-delay: .5s !important;
+}
+
+.srv2Wrap .bx3 {
+	transition-delay: 1s !important;
+}
+
+.srv2Wrap .bx4 {
+/*	transition-delay: 1.5s !important;*/
+	transition-delay: 0s !important;
+
+}
+
+.srv2Wrap .effect.bx4 {
+		transition-delay: 1.5s !important;
+}
+
+.animate-stop-fade-in {
+	opacity: 1 !important;
+	-webkit-animation-duration: 0s !important;
+    animation-duration: 0s !important;
+	transition-duration: 0s !important;
+	visibility: visible !important;
+}
+
+.footer .journeyBox .elementor-widget-container a:hover,
+.footer .getBox > .elementor-widget-container a:hover {
+	color: #fff !important;
+}
+
+.footer .getBox > .elementor-widget-container a:hover:before {
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+.footer .journeyBox .elementor-widget-container:hover,
+.footer .getBox > .elementor-widget-container:hover {
+	transform: scale(1.07);
+}
+
+.footer .getBox > .elementor-widget-container a:before {
+	transition: all .5s;
+	transition-delay: 1s;
+}
+
+
+
+
+
+/* 
+============================================================================================================
+============================================================================================================
+
+                                    THEME STYLE RESPONSIVE CSS START
+
+============================================================================================================
+============================================================================================================
+*/
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1200px) and (max-width: 1379px) {
+
+
+}
+
+/* Large desktop */
+@media (min-width: 1025px) {
+	
+	 .elementor-section.elementor-section-boxed > .elementor-container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}	 
+	
+	body {
+	  cursor: none;
+	}
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) and (max-width: 1199px) {
+
+}
+
+   
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) { 
+	
+	.elementor-section.elementor-section-boxed > .elementor-container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}	 
+	
+	.footer .elementor-counter-title, 
+	.footer .elementor-counter-number-wrapper {
+		font-size: 30px !important;
+	}
+	
+}
+
+     
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	
+	@media screen and (orientation: landscape) {
+
+	}
+	
+	.elementor-section.elementor-section-boxed > .elementor-container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	img.aligncenter, 
+	img.alignleft, 
+	img.alignright {
+		max-width: 100%;
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+	
+	.smart-page-loader .text p {
+	    max-width: 300px;
+	    font-size: 22px;
+	    line-height: 30px;
+	}
+	
+	.footer .elementor-counter-title, 
+	.footer .elementor-counter-number-wrapper {
+		font-size: 24px !important;
+	}
+	
+	body {
+		font-size: 18px;
+	}
+	
+	.containerWrap p {
+		line-height: 28px;
+	}
+	
+	.srv2Boxes .bx1:hover .elementor-widget-button, 
+	.srv2Boxes .bx2:hover .elementor-widget-button {
+		 margin-right: 0px !important;
+	}
+	
+	.srv2Boxes .elementor-column-wrap {
+		padding-top: 54px !important;
+	}
+	
+	
+/*	.srv2Boxes .bx1:hover .elementor-widget-button, 
+	.srv2Boxes .bx2:hover .elementor-widget-button {
+    	margin-bottom: 8px !important;
+	}*/
+	
+	form.elementor-form .dbtn {
+		font-size: 16px !important;
+		padding: 0 50px 0 0 !important;
+	}
+	
+	body form.elementor-form .elementor-field-group .dbtn:before {
+		right: 18px;
+	}
+	
+	body form.elementor-form .elementor-field-group .dbtn:hover:before {
+		right: 10px;
+	}
+	
+	form.elementor-form .elementor-field-type-time .elementor-field-textual.elementor-size-sm, form.elementor-form .elementor-field-type-date .elementor-date-field, form.elementor-form .select2-container .select2-choice, form.elementor-form select, form.elementor-form input[type='tel'], form.elementor-form textarea, form.elementor-form input[type='password'], form.elementor-form input[type='number'], form.elementor-form input[type='url'], form.elementor-form input[type='email'], form.elementor-form input[type='text'], form.elementor-form input[type='search'] {
+		font-size: 16px !important;
+	}
+	
+	.srv2Wrap .bx3 {
+		transition-delay: .5s !important;
+	}
+
+	.srv2Wrap .bx4 {
+		transition-delay: 1s !important;
+	}
+	
+	#awwwards {
+		display: none;
+	}
+	
+	
+	
+	
+}
+
+     
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+
+}

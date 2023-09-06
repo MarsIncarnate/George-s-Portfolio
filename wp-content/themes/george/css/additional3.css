@@ -1,0 +1,699 @@
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                   ADDITIONAL 3 STYLE CSS START
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/*startWrap*/
+
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:first-child label:before,
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(2) label:before,
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(3) label:before,
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:last-child label:before {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 3px solid yellow;
+    display: block;
+    position: static;
+    top: inherit;
+    left: inherit;
+    margin: 0 auto 40px;
+
+}
+
+.startWrap form.elementor-form .elementor-field-type-radio .elementor-field-option input:checked ~ label:before {
+	 border-color: #F02028;
+}
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup {
+	display: block;
+    text-align: center;
+}
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span {
+	display: inline-block;
+	margin-bottom: 80px;
+	margin-right: 0 !important;
+}
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:last-child {
+	 margin-right: 0;
+}
+.startWrap form .elementor-field-type-checkbox label.elementor-field-label {
+	display: none !important;
+}
+.startWrap form.elementor-form .elementor-field-group {
+	border: none;
+	margin: 0 auto;
+
+}
+.startWrap form.elementor-form .elementor-field-group input {
+	background: transparent;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFED !important;
+    width: 100%;
+    position: relative;
+    padding: 12px;
+}
+.startWrap form.elementor-form .elementor-field-type-next:before {
+    height: 52px;
+    width: 52px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: calc(14% - 26px);
+    transform: rotate(90deg);
+    border-radius: 50%;
+}
+.startWrap form.elementor-form .elementor-field-type-textarea,
+.startWrap form.elementor-form .elementor-field-type-select {
+	border: 2px solid #fff;
+	margin-bottom: 40px !important;
+}
+.startWrap form.elementor-form .elementor-field-type-select option {
+	color: orange;
+}
+.startWrap form.elementor-form .elementor-field-type-select .elementor-select-wrapper:before {
+	color: #fff;
+	font-size: 30px;
+}
+.startWrap form.elementor-form .elementor-field-type-select select,
+.startWrap form.elementor-form .elementor-field-type-textarea textarea {
+	height: 60px;
+	background-color: transparent !important;
+}
+
+.startWrap form.elementor-form .elementor-field-type-html {
+	text-align: center;
+	
+}
+.startWrap form.elementor-form .elementor-field-type-html h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFED !important;
+}
+.startWrap form.elementor-form .elementor-field-type-html h2 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fff !important;
+    padding-bottom: 50px !important;
+}
+.startWrap form.elementor-form .elementor-field-type-html p {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #fff !important;
+    width: 60%;
+    margin: 0 auto;
+	
+}
+.startWrap form.elementor-form .elementor-field-type-text,
+.startWrap form.elementor-form .elementor-field-type-email,
+.startWrap form.elementor-form .elementor-field-type-tel {
+	border: 2px solid #fff;
+	margin-bottom: 40px !important;
+	height: 60px;
+}
+.startWrap form.elementor-form .e-form__buttons .dbtn:before {
+	display: none;
+}
+
+.startWrap form.elementor-form .e-form__buttons {
+	position: relative;
+}
+.startWrap form.elementor-form .e-form__buttons .dbtn {
+	width: 200px;
+    height: 200px;
+    border-radius: 50% !important;
+    color: #fff !important;
+    padding-right: 0 !important;
+   	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 100px);
+    font-size: 26px !important;
+    transition: all .5s;
+}
+.startWrap form.elementor-form .e-form__buttons .dbtn:hover {
+	transform: rotateX(15deg);
+}
+.startWrap form.elementor-form .elementor-field-type-submit {
+	background: transparent;
+}
+.startWrap form.elementor-form .elementor-field-type-submit {
+	position: static;
+}
+.startWrap form { 
+	padding-bottom: 300px;
+}
+
+.startWrap form.elementor-form .e-form__buttons .elementor-field-type-next input {
+	   cursor: pointer; 
+	   text-align: left;
+	   z-index: 99;
+}
+.startWrap form.elementor-form .e-form__buttons .elementor-field-type-previous {
+    display: none !important;
+}
+.startWrap form.elementor-form .elementor-field-type-next {
+	width: 260px;
+}
+.startWrap form.elementor-form .elementor-field-type-text input,
+.startWrap form.elementor-form .elementor-field-type-email input,
+.startWrap form.elementor-form .elementor-field-type-tel input {
+	background-color: transparent !important;
+	color: #fff !important;
+    font-weight: 400;
+    font-size: 20px !important;
+}
+.startWrap form.elementor-form {
+	z-index: 1;
+}
+.startWrap form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:after {
+	left: 100px !important;
+   top: 80px ;
+   width: 70px !important;
+   height: 30px !important;
+   border-left: 3px solid #fff !important;
+   border-bottom: 3px solid #fff !important;
+}
+.startWrap form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:before {
+	background: transparent !important;
+	border: 3px solid yellow !important;
+}
+
+
+
+/* projectWrap*/
+.projectWrap .elementor-widget-shortcode .disabled .owl-prev,
+.projectWrap .elementor-widget-shortcode .disabled .owl-next {
+	background: transparent;
+    border: none;
+    color: transparent; 
+}
+.projectWrap .elementor-widget-shortcode .disabled .owl-prev:after {
+	width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: calc(51% - 26px);
+    left: -30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.projectWrap .elementor-widget-shortcode .disabled .owl-next:after {
+	width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: calc(51% - 26px);
+    right: -28px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.projectWrap .elementor-widget-shortcode .disabled .owl-next:hover:after,
+.projectWrap .elementor-widget-shortcode .disabled .owl-prev:hover:after {
+	background-color: yellow;
+	
+}
+
+
+.projectWrap .owl-carousel .owl-item article {
+	width: 33.33%;
+	 float: left;
+}
+.projectWrap .owl-carousel .owl-item .item .gridView {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.projectWrap .owl-carousel .owl-item .item .gridView:after {
+	content: '';
+	display: table;
+    clear: both;
+}
+.projectWrap .owl-carousel .owl-item .workBox {
+	height: 400px;
+	position: relative;
+}
+.projectWrap .owl-carousel .owl-item .workBox .special_view {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    transform: scale(1);
+    transition: all .5s;
+    width: 50%;
+}
+.projectWrap .owl-carousel .owl-item .workBox:hover .special_view{
+	transform: scale(1.05);
+}
+.projectWrap .owl-carousel .owl-item .workBox .imageBx {
+	height: 100%;
+}
+.projectWrap .owl-carousel .owl-item .workBox .blankLink {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+.projectWrap .owl-item .workBox .slideOverlay {
+/*	background: rgba(0,0,0,.3) !important;*/
+    height: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+.projectWrap .owl-item article:hover .workBox .slideOverlay {
+	opacity: .7;
+}
+
+.projectWrap .owl-carousel .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+    z-index: 9;
+    display: inline-block;
+}
+.projectWrap .owl-carousel .owl-dots .owl-dot {
+	background: #e1e1e1;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 0;
+    z-index: 9;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+.projectWrap .owl-carousel .owl-dots .owl-dot.active {
+	background: yellow;
+}
+.projectWrap .elementor-widget-heading h3 {
+	font-size: 50px;
+
+}
+.projectWrap .elementor-shortcode {
+	text-align: center;
+	margin-bottom: -100px;
+}
+.projectWrap .circleImg {
+	transform: rotateY(180deg);
+}
+
+.error404 textarea::-webkit-input-placeholder,
+.error404 input::-webkit-input-placeholder {
+	color: orange !important;
+}
+
+.error404 textarea:-moz-placeholder,
+.error404 input:-moz-placeholder { /* Firefox 18- */
+	color: orange !important;
+}
+
+.error404 textarea::-moz-placeholder,
+.error404 input::-moz-placeholder {  /* Firefox 19+ */
+	color: orange !important;
+}
+
+.error404 textarea:-ms-input-placeholder,
+.error404 input:-ms-input-placeholder {  
+	color: orange !important;
+}
+.projectWrap .owl-carousel .owl-dots:after {
+	content: '';
+	width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+/*archiveWrap*/
+.archiveWrap .elementor-post__card {
+	text-align: center;
+}
+
+
+/*browser fix*/
+.safari.iphone.osx .startWrap .elementor-button.elementor-hidden,
+.safari.iphone.osx .startWrap .elementor-hidden {
+	animation: inherit;
+	opacity: 1;
+	transition-delay: 0s;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                   ADDITIONAL 3 STYLE RESPONSIVE CSS START
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+@media (min-width: 1200px) and (max-width: 1580px) {
+	.projectWrap .elementor-widget-shortcode .disabled .owl-prev:after {
+		 left: -80px;
+	}
+	.projectWrap .elementor-widget-shortcode .disabled .owl-next:after {
+		right: -80px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		padding-left: 25px;
+    	padding-right: 25px;
+	}
+
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:first-child label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(2) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(3) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:last-child label:before {
+    	width: 150px !important;
+   	height: 150px !important;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox label {
+		padding-left: 10px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		padding-left: 25px;
+    	padding-right: 25px;
+    	font-size: 26px;
+	}
+}
+
+
+
+
+/* Large desktop */
+@media (min-width: 1025px) {
+	
+
+	
+	
+	
+	 	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1025px) and (max-width: 1199px) { 
+	.projectWrap .elementor-widget-shortcode .disabled .owl-next:after {
+		 right: -70px;
+	}
+	.projectWrap .elementor-widget-shortcode .disabled .owl-prev:after {
+		 left: -70px;
+	}
+	.projectWrap .owl-carousel .owl-item .workBox {
+		 height: 300px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:after {
+		left: 72px !important;
+    	top: 60px;
+    	width: 60px !important;
+    	height: 25px !important;
+	}
+
+}
+
+@media (max-width: 1024px) {
+	
+
+	
+}
+
+
+   
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) { 
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:first-child label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(2) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(3) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:last-child label:before {
+    	width: 120px !important;
+   	 	height: 120px !important;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox label {
+		padding-left: 0px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		 font-size: 20px;
+	}
+	.startWrap form.elementor-form .elementor-field-group input {
+		 font-size: 20px;
+	}
+
+	.startWrap form.elementor-form .elementor-field-type-html h2 {
+		font-size: 60px;
+		padding-bottom: 30px !important;
+	}
+	
+	.projectWrap .elementor-widget-shortcode .disabled .owl-prev:after {
+		    position: static;
+			width: 44px;
+			height: 44px;
+			top: calc(51% - 22px);
+	}
+	.projectWrap .elementor-widget-shortcode .disabled .owl-next:after {
+		 position: static;
+		width: 44px;
+		height: 44px;
+		top: calc(51% - 22px);
+	}
+	.projectWrap .owl-carousel .owl-item .workBox {
+		 height: 300px;
+	}
+	.projectWrap .elementor-widget-heading h3 {
+		font-size: 36px;
+    
+	}
+	.projectWrap .elementor-widget-shortcode .disabled {
+		position: absolute;
+    	top: -78px;
+    	right: 0px;
+
+    	
+	}
+	
+	.page-id-190 .bannerWrap .elementor-widget h1 span.elementor-headline-plain-text:first-child {
+		display: block;
+	}
+	.startWrap form.elementor-form .e-form__buttons .elementor-field-type-next input {
+		text-align: center;
+	}
+	
+	.startWrap form.elementor-form .elementor-field-type-next:before {
+	    right: calc(16% - 20px);
+    	width: 40px;
+    	height: 40px;	
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		padding-left: 25px;
+    	padding-right: 25px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:after {
+    	left: 56px !important;
+    	top: 44px;
+    	width: 56px !important;
+    	height: 25px !important;
+	}
+	
+	.projectWrap .elementor-widget-shortcode .disabled button:first-child,
+	.projectWrap .elementor-widget-shortcode .disabled button:nth-child(4) {
+	
+	}
+
+		
+}
+
+     
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:first-child label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(2) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(3) label:before,
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:last-child label:before {
+    	width: 120px !important;
+   	 	height: 120px !important;
+   	 	margin: 0 auto 20px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox label {
+		padding-left: 0px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		 font-size: 18px;
+	}
+	.startWrap form.elementor-form .elementor-field-group input {
+		 font-size: 20px;
+	}
+
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(2) {
+		margin-right: 0px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span {
+		width: 50%;
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+
+	.startWrap form.elementor-form .elementor-field-type-html h2 {
+		font-size: 28px;
+		padding-bottom: 20px !important;
+	}
+	.startWrap form.elementor-form .elementor-field-type-html h6 {
+		font-size: 12px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-text, 
+	.startWrap form.elementor-form .elementor-field-type-email,
+	.startWrap form.elementor-form .elementor-field-type-tel {
+		margin-bottom: 50px !important;
+    	height: 64px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-html p {
+		width: 100%;
+		font-size: 16px;
+	}
+	.projectWrap .elementor-widget-shortcode .disabled {
+	    position: absolute;
+    	bottom: -158px;
+    	right: calc(50% - 20px);
+    	z-index: 9;
+
+	}
+	
+	.projectWrap .owl-carousel .owl-dots {
+		display: none;
+	}
+	
+	
+	.projectWrap .owl-carousel .owl-item .workBox {
+		height: 150px;
+	}
+	.projectWrap .elementor-widget-heading h3 {
+		font-size: 26px;
+        margin-bottom: 0px;
+	}
+
+/*	.projectWrap .owl-carousel .owl-dots {
+		opacity: 0;
+	}*/
+	.projectWrap .elementor-widget-shortcode .disabled .owl-prev:after {
+		left: -40px;
+		width: 40px;
+    	height: 40px;
+	}
+	.projectWrap .elementor-widget-shortcode .disabled .owl-next:after {
+		width: 40px;
+    	height: 40px;
+	}
+	.projectWrap .owl-carousel .owl-item .workBox .special_view {
+		width: 40%;
+	}
+	
+	.projectWrap .owl-carousel .owl-item article {
+		width: 50%;
+	}
+
+	.startWrap form.elementor-form .e-form__buttons input {
+	    padding-left: 0;
+        padding-right: 50px;
+        
+        
+	}
+	.startWrap form.elementor-form .e-form__buttons .elementor-field-type-next input {
+		text-align: center;
+	}
+	
+	.startWrap form.elementor-form .elementor-field-type-next:before {
+	    right: calc(24% - 20px);
+    	width: 40px;
+    	height: 40px;	
+	}
+
+    .startWrap form.elementor-form .elementor-field-type-text input, .startWrap form.elementor-form .elementor-field-type-email input, .startWrap form.elementor-form .elementor-field-type-tel input {
+    	font-size: 16px !important;
+    }
+    
+    .projectWrap .elementor-widget-shortcode .disabled .owl-prev,
+	.projectWrap .elementor-widget-shortcode .disabled .owl-next {
+		    padding: 0 4px;
+	}
+	
+	.page-id-190 .bannerWrap .elementor-widget h1 span.elementor-headline-plain-text:first-child {
+		display: block;
+	}
+	.startWrap form.elementor-form .elementor-field-type-next {
+    	width: 200px;
+	}
+	.startWrap form.elementor-form .elementor-field-type-checkbox .elementor-field-option input:checked ~ label:after {
+      left: calc(50% - 33px) !important;
+    	top: 44px;
+	}
+	.startWrap form.elementor-form .e-form__buttons .dbtn {
+		width: 150px;
+    	height: 150px;
+      left: calc(50% - 75px);
+    	font-size: 20px !important;
+    	top: 60px;
+	}
+	
+
+	
+}
+
+     
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span label {
+		padding-left: 0px;
+    	padding-right: 0px;
+	}
+	.startWrap form .elementor-field-type-checkbox .elementor-field-subgroup span:nth-child(odd) {
+		padding-right: 10px;
+	}
+	
+	.projectWrap .owl-carousel .owl-item .workBox .special_view {
+		width: 60%;
+	}
+   
+}
+
+
